@@ -49,7 +49,6 @@ margin-left: 100%;
 <div class="edit-container">
 
     <h2>تعديل المقال</h2>
-
     <form action="{{ route('posts.update', $post->id) }}" method="POST">
         @csrf
 
