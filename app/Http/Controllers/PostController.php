@@ -29,7 +29,7 @@ class PostController extends Controller
         Post::create([
             'title' => $request->title,
             'content' => $request->content,
-            'category_id' => $request->category_id ?? 1,
+            'category_id' => $request->category_id ?? null,
         ]);
 
         return redirect()->back()->with('success', 'تم الإضافة بنجاح');
