@@ -93,12 +93,12 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::get('admin-dashboard', function () {
     return view('admin.login');
 })->name('login');
-
-Route::middleware(['auth'])->group(function () {
-
-    Route::get('admin-register', function () {
+   Route::get('admin-register', function () {
         return view('admin.register');
     })->name('register');
+Route::middleware(['auth'])->group(function () {
+
+ 
     // Route::post('admin-register', [AuthController::class, 'store'])
     //     ->name('admin.register');
     Route::post('admin-register', [AuthController::class, 'register'])->name('admin.register');
