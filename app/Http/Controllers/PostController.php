@@ -27,6 +27,7 @@ class PostController extends Controller
 
         // insert in DB
         Post::create([
+                     'category_id' => $request->category_id ?? 1,
             'title' => $request->title,
             'content' => $request->content,
         ]);
