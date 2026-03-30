@@ -93,7 +93,6 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::get('admin-dashboard', function () {
     return view('admin.login');
 })->name('login');
-
 Route::get('admin-register', function () {
     return view('admin.register');
 })->name('register');

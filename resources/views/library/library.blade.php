@@ -6,7 +6,7 @@
     <div class="row g-4">
 
         @foreach($posts as $post)
-            <div class="col-md-4">
+            <div class="col-12 col-md-4">
                 <div class="card fancy-card h-100">
                     
                     <div class="card-body d-flex flex-column">

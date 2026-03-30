@@ -6,7 +6,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo-img" >
                                 <a href="{{route('home')}}">
-                                    <img src="{{asset('img/logo.png')}}"  alt="logo" width="180px" height="100px">
+                                    <img src="{{asset('img/logo-black.jpeg')}}"  alt="logo" width="180px" height="100px">
                                 </a>
                             </div>
                         </div>
